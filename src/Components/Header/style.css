@@ -1,0 +1,11 @@
+header.Header {
+	display: flex;
+	background-color: #3C273B;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40pt;
+	height: 95px;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+}

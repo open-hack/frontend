@@ -1,0 +1,98 @@
+div.InputText * {
+	box-sizing:border-box;
+}
+
+div.InputText { 
+  position:relative; 
+  margin-bottom:45px;
+  margin-top: 35px;
+}
+
+div.InputText input {
+  font-size:18px;
+  padding:10px 10px 10px 20px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #3C273B;
+}
+
+div.InputText input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+div.InputText label {
+  color:#3C273B; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+div.InputText input:focus ~ label, div.InputText input:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#F9314E;
+}
+
+/* BOTTOM BARS ================================= */
+div.InputText .bar 	{ position:relative; display:block; width:100%; }
+div.InputText .bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#3C273B; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+div.InputText .bar:before {
+  left:50%;
+}
+div.InputText .bar:after {
+  right:50%; 
+}
+
+/* active state */
+div.InputText input:focus ~ .bar:before, div.InputText input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+div.InputText .highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+div.InputText input:focus ~ .highlight {
+  -webkit-animation:inputTextinputHighlighter 0.3s ease;
+  -moz-animation:inputTextinputHighlighter 0.3s ease;
+  animation:inputTextinputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputTextinputHighlighter {
+	from { background:#3C273B; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputTextinputHighlighter {
+	from { background:#3C273B; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputTextinputHighlighter {
+	from { background:#3C273B; }
+  to 	{ width:0; background:transparent; }
+}

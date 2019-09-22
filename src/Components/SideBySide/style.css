@@ -1,0 +1,16 @@
+div.SideBySide {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 100%;
+}
+
+div.SideBySide div.left, div.SideBySide div.right {
+	flex-basis: 50%;
+	display: flex;
+}
+
+div.SideBySide div.left {
+}
+
+div.SideBySide div.right {
+}

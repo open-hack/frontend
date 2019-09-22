@@ -1,0 +1,7 @@
+div.CoverImage {
+	flex-basis: 100%;
+	background-color: #3C273B;
+	background-blend-mode: screen;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

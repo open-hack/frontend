@@ -13,13 +13,14 @@ import CoverImage from './Components/CoverImage';
 import Button from './Components/Button';
 import Text from './Components/Text';
 import InputText from './Components/InputText';
+import ClickableOpacity from './Components/ClickableOpacity';
 
 function App() {
   return (
     <div className="App">
       <Header leftComponent={<img src={logo} />} rightComponent={<p style={{color:"white"}}>Menu <img src={arrowDown} /></p>} />
       <Main>
-        <SideBySide leftContent={<CoverImage image={image1}><img src={logo} /></CoverImage>} rightContent={<div><Text><b>Hello</b> guys!</Text><InputText label="Email" onChangeText={console.log} /><InputText label="Senha" type="password" onChangeText={console.log} /><Button title="Sign up" /></div>} />
+        <SideBySide leftContent={<CoverImage image={image1}><img src={logo} /></CoverImage>} rightContent={<div><Text color="#F9314E" size={48}><strong>Junda!</strong></Text><Text><b>Hello</b> guys!</Text><InputText label="Email" onChangeText={console.log} /><InputText label="Senha" type="password" onChangeText={console.log} /><Button title="Sign up" /><ClickableOpacity onClick={()=>{console.log("junda")}}><Text>Jundou!</Text></ClickableOpacity></div>} />
       </Main>
     </div>
   );

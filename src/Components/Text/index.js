@@ -1,4 +1,4 @@
 import React from "react"
 import "./style.css"
 
-export default ({size=14, children,...props}) => (<p className="Text" style={{fontSize: size}}>{children}</p>)
+export default ({ size = 14, color = "#3C273B", children,...props}) => (<p className="Text" style={{fontSize: size, color: color}}>{children}</p>)

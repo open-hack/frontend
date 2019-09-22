@@ -14,3 +14,7 @@ div.Content {
 	flex-basis: 100%;
 	display: flex;
 }
+
+div.Content div {
+	flex-basis: 100%;
+}

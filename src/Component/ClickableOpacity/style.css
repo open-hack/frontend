@@ -1,4 +1,4 @@
-div.ClickableOpacity {
+span.ClickableOpacity {
 	display: inline-flex;
 	cursor: pointer;
 	-webkit-touch-callout: none;
@@ -9,6 +9,6 @@ div.ClickableOpacity {
 	user-select: none;
 }
 
-div.ClickableOpacity:active {
+span.ClickableOpacity:active {
 	opacity: 0.5;
 }

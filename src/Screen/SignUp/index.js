@@ -14,7 +14,7 @@ import "./style.css"
 import Logo from "../../Component/Logo";
 
 const LeftContent = ({ ...props }) => (<CoverImage image={image2}>
-	<Logo color="#FFFFFF" />
+	<Logo height={40} color="#FFFFFF" />
 </CoverImage>);
 
 const RightContent = ({ ...props }) => (<div className="RightContent">

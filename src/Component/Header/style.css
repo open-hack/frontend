@@ -4,7 +4,7 @@ header.Header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 40pt;
-	height: 95px;
+	height: 70px;
 	flex-grow: 0;
 	flex-shrink: 1;
 	flex-basis: auto;

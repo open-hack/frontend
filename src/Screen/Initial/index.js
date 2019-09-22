@@ -22,7 +22,7 @@ const RightContent = ({ ...props }) => (<div className="RightContent">
 	</div>
 	<div className="SignUpContainer">
 		<div className="SignUp">
-			<Logo color="#F9314E" />
+			<Logo height={40} color="#F9314E" />
 			<div className="MainText">
 				<Text size={32}>
 					A New way<br /> to <b>management</b><br /> you <b>hackathon</b><br /> audience <b>together</b><br /> with <b>sponsors</b>

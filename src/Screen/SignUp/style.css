@@ -1,0 +1,50 @@
+div.SignUp {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+div.SignUp div.RightContent {
+	display: flex;
+	flex-direction: column;
+}
+
+div.SignUp div.Login {
+	display: flex;
+	justify-content: flex-end;
+	padding: 40px;
+	flex-basis: auto;
+}
+
+div.SignUp div.SignUpContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.SignUp div.SignUpContainer div.SignUpForm {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+}
+
+div.SignUp div.SignUpContainer div.SignUpForm div.InputText {
+	margin-bottom: 0;
+}
+
+div.SignUp div.SignUpContainer div.SignUpForm div.Button {
+	margin-top: 40px;
+}
+
+div.SignUp div.SignUpContainer div.SignUpForm div.MainText p {
+	line-height: 32px;
+}
+
+div.SignUp div.Logo {
+	padding: 40px;
+}
+
+div.SignUp div.Logo svg {
+	height: 40px;
+}

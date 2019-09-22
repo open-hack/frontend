@@ -4,7 +4,6 @@ div.SideBySide {
 }
 
 div.SideBySide div.left, div.SideBySide div.right {
-	flex-basis: 50%;
 	display: flex;
 }
 
@@ -13,7 +12,9 @@ div.SideBySide div.left  div, div.SideBySide div.right div {
 }
 
 div.SideBySide div.left {
+	flex-basis: 45%;
 }
 
 div.SideBySide div.right {
+	flex-basis: 55%;
 }

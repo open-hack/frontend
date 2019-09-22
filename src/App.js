@@ -1,19 +1,19 @@
 import React from 'react';
 
-import Header from './Components/Header'
-import Main from './Components/Main';
+import Header from './Component/Header'
+import Main from './Component/Main';
 
 import logo from './assets/img/logo.svg'
 import arrowDown from './assets/img/arrow-down.svg'
 import image1 from './assets/img/image1.png'
 
 import './App.css';
-import SideBySide from './Components/SideBySide';
-import CoverImage from './Components/CoverImage';
-import Button from './Components/Button';
-import Text from './Components/Text';
-import InputText from './Components/InputText';
-import ClickableOpacity from './Components/ClickableOpacity';
+import SideBySide from './Component/SideBySide';
+import CoverImage from './Component/CoverImage';
+import Button from './Component/Button';
+import Text from './Component/Text';
+import InputText from './Component/InputText';
+import ClickableOpacity from './Component/ClickableOpacity';
 
 function App() {
   return (

@@ -18,7 +18,7 @@ const LeftContent = ({ ...props }) => (<CoverImage image={image2}>
 </CoverImage>);
 
 const RightContent = ({ ...props }) => (<div className="RightContent">
-	<div className="Login">
+	<div className="LoginLabel">
 		<ClickableOpacity onClick={() => { console.log("junda") }}>
 			<Text>Login</Text>
 		</ClickableOpacity>

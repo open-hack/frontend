@@ -10,7 +10,7 @@ div.SignUp div.RightContent {
 	flex-direction: column;
 }
 
-div.SignUp div.Login {
+div.SignUp div.LoginLabel {
 	display: flex;
 	justify-content: flex-end;
 	padding: 40px;

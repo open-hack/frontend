@@ -13,6 +13,7 @@ div.Button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	max-height: 56px;
 	min-height: 56px;
 	min-width: 176px;
 	-webkit-transition: background-color 0.15s ease;

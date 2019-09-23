@@ -15,7 +15,7 @@ import Logo from "../../Component/Logo";
 const LeftContent = ({ ...props }) => (<CoverImage image={image1} />);
 
 const RightContent = ({ ...props }) => (<div className="RightContent">
-	<div className="Login">
+	<div className="LoginLabel">
 		<ClickableOpacity onClick={() => { console.log("junda") }}>
 			<Text>Login</Text>
 		</ClickableOpacity>

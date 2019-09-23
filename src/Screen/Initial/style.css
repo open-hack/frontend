@@ -10,7 +10,7 @@ div.Initial div.RightContent {
 	flex-direction: column;
 }
 
-div.Initial div.Login {
+div.Initial div.LoginLabel {
 	display: flex;
 	justify-content: flex-end;
 	padding: 40px;
@@ -37,8 +37,15 @@ div.Initial div.SignUpContainer div.SignUp div.MainText {
 	margin: 30px 0;
 }
 
+div.Initial div.SignUp div.Logo {
+}
+
 div.Initial div.SignUp div.Logo svg {
 }
 
-div.Initial div.SignUp div.Button {
+div.Initial div.SignUp div.Button,
+div.Initial div.SignUpContainer div.SignUp div.MainText,
+div.Initial div.SignUp div.Logo {
+	display: flex;
+	flex-basis: auto;
 }

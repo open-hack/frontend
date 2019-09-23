@@ -8,7 +8,7 @@ import Home from './Screen/Home';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Initial />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import { withRouter } from "react-router-dom";
 
 import Main from '../../Component/Main';
 import SideBySide from '../../Component/SideBySide';
@@ -17,9 +18,9 @@ const LeftContent = ({ ...props }) => (<CoverImage image={image2}>
 	<Logo height={40} color="#FFFFFF" />
 </CoverImage>);
 
-const RightContent = ({ ...props }) => (<div className="RightContent">
+const RightContent = withRouter(({ history, ...props }) => (<div className="RightContent">
 	<div className="LoginLabel">
-		<ClickableOpacity onClick={() => { console.log("junda") }}>
+		<ClickableOpacity onClick={() => { history.push("login") }}>
 			<Text>Login</Text>
 		</ClickableOpacity>
 	</div>
@@ -42,7 +43,7 @@ const RightContent = ({ ...props }) => (<div className="RightContent">
 	{/* <Text><b>Hello</b> guys!</Text> */}
 	{/* <InputText label="Email" onChangeText={console.log} />
 	<InputText label="Senha" type="password" onChangeText={console.log} /> */}
-</div>);
+</div>));
 
 export default ({...props}) => (<div className="SignUp">
 	<Main>

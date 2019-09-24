@@ -1,4 +1,5 @@
 import React from "react"
+import { withRouter } from "react-router-dom";
 
 import Main from '../../Component/Main';
 import SideBySide from '../../Component/SideBySide';
@@ -12,11 +13,11 @@ import image1 from '../../assets/img/image1.png'
 import "./style.css"
 import Logo from "../../Component/Logo";
 
-const LeftContent = ({ ...props }) => (<CoverImage image={image1} />);
+const LeftContent = ({...props }) => (<CoverImage image={image1} />);
 
-const RightContent = ({ ...props }) => (<div className="RightContent">
+const RightContent = withRouter(({ history, ...props }) => (<div className="RightContent">
 	<div className="LoginLabel">
-		<ClickableOpacity onClick={() => { console.log("junda") }}>
+		<ClickableOpacity onClick={() => history.push("login")}>
 			<Text>Login</Text>
 		</ClickableOpacity>
 	</div>
@@ -28,13 +29,10 @@ const RightContent = ({ ...props }) => (<div className="RightContent">
 					A New way<br /> to <b>management</b><br /> you <b>hackathon</b><br /> audience <b>together</b><br /> with <b>sponsors</b>
 				</Text>
 			</div>
-			<Button title="Sign up" />
+			<Button title="Sign up" onClick={()=>history.push("signup")} />
 		</div>
 	</div>
-	{/* <Text><b>Hello</b> guys!</Text> */}
-	{/* <InputText label="Email" onChangeText={console.log} />
-	<InputText label="Senha" type="password" onChangeText={console.log} /> */}
-</div>);
+</div>));
 
 export default ({...props}) => (<div className="Initial">
 	<Main>

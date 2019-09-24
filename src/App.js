@@ -7,6 +7,7 @@ import Initial from './Screen/Initial';
 import SignUp from './Screen/SignUp';
 import Login from './Screen/Login';
 import Home from './Screen/Home';
+import Chat from './Screen/Chat';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
         <Route path="/home" component={Home} />
+        <Route path="/chat" component={Chat} />
       </Router>
     </div>
   );

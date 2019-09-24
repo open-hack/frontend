@@ -1,0 +1,155 @@
+div.Chat {
+	flex: 1 0 auto;
+	display: flex;
+	position: relative;
+}
+
+div.modal {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	background: rgba(60, 39, 59, 0.96);
+	display: flex;
+	visibility: visible;
+	opacity: 1;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition:0.15s linear;
+}
+
+div.modal.invisible {
+	visibility: hidden;
+	opacity: 0;
+}
+
+div.modal.invisible > * {
+	display: none;
+}
+
+div.modal > div.modal-content  {
+	flex: 0 0 64%;
+	max-width: 34%;
+	background: white;
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+div.scrollable {
+	flex-basis: 60%;
+	overflow-y: auto;
+    min-height: 0px;
+}
+
+div.start div.Button {
+	display: inline-flex;
+}
+
+div.Chat div.users {
+	flex: 0 0 18%;
+	background: #312031;
+	display: flex;
+	flex-direction: column;
+}
+
+
+div.Chat div.users div.user-list-item {
+	display: flex;
+	margin: 15px 0;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 20px;
+}
+
+div.Chat div.users div.user-list-item:first-child {
+	margin-top: 40px;
+}
+
+div.Chat div.users div.user-list-item img {
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+div.Chat div.conversation {
+	flex: 1 1 auto;
+	background: gold;
+	display: flex;
+	flex-direction: column;
+}
+
+div.Chat div.conversation div.messages {
+	flex: 1 1 auto;
+	background: #F4F2F6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+div.Chat div.conversation div.messages div.message-item {
+	display: flex;
+	width: 40%;
+	margin-top: 20px
+}
+div.Chat div.conversation div.messages div.message-item div.message {
+	background-color: white;
+	padding: 10px;
+}
+
+div.Chat div.conversation div.messages div.message-item div.user-data {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+div.Chat div.conversation div.messages div.message-item div.user-data.left {
+	background: #3C273B;
+}
+
+div.Chat div.conversation div.messages div.message-item.right {
+	box-shadow: 0px 8px 16px rgba(60, 39, 59, 0.16);
+	/* align-self: flex-end; */
+}
+
+div.Chat div.conversation div.messages div.message-item div.user-data.right {
+	background: #F9314E;
+}
+
+div.Chat div.conversation div.messages div.message-item div.user-data > img {
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+div.Chat div.conversation div.type-message {
+	flex: 0 1 9%;
+	background: white;
+	border-top: #3C273B solid 1px;
+	display: flex;
+}
+
+div.Chat div.conversation div.type-message input:focus {
+	outline: none;
+}
+
+div.Chat div.conversation div.type-message input {
+	flex: 1;
+	border: none;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #3C273B;
+}
+
+div.Chat div.conversation div.type-message div.send-message:active {
+	position:relative;
+	top:1px;
+}
+
+div.Chat div.conversation div.type-message div.send-message {
+	align-self: center;
+	padding-right: 10px;
+	cursor: pointer;
+}

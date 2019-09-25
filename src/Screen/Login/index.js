@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { withRouter } from "react-router-dom";
 
 import Main from '../../Component/Main';
@@ -24,6 +24,11 @@ const LeftContent = ({ ...props }) => (<CoverImage image={image3}>
 
 const RightContent = withStore(withRouter(({history, setIsLoading, setErrorMessage, store, setStore, ...props }) => {
 	const [email, setEmail] = useState();
+	useEffect(() => {
+		if (store.user) {
+			history.push("home");
+		}
+	}, [store.user, history]);
 
 	return (<div className="RightContent">
 		<div className="SignUpLabel">

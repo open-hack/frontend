@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import './App.css';
 
@@ -10,7 +10,7 @@ import Home from './Screen/Home';
 import Chat from './Screen/Chat';
 import Provider from './store';
 
-function App() {
+const App = ({...props}) => {
   return (
     <div className="App">
       <Router>
@@ -22,11 +22,11 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default props => {
   const localStorageStore = localStorage.getItem("store");
-  const initialStore = localStorageStore ? JSON.parse(localStorageStore) : { user: {} };
+  const initialStore = localStorageStore ? JSON.parse(localStorageStore) : { user: undefined };
   const [store, setStore] = useState(initialStore);
   
   useEffect(() => {

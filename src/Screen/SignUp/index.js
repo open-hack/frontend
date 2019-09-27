@@ -52,7 +52,7 @@ const RightContent = withStore(withRouter(({ history, store, setIsLoading, setEr
 				<InputText label="portfolio:" />
 				<Button onClick={()=>{
 					setIsLoading(true);
-					Axios.post("https://open-hack-shawee.herokuapp.com/api/user",{name,email,username:email})
+					Axios.post("https://open-hack-shawee.herokuapp.com/api/user",JSON.stringify({name,email,username:email}))
 						.then(d => d.data)
 						.then(data => {
 							return Axios.post("https://open-hack-shawee.herokuapp.com/api/login/" + email)
